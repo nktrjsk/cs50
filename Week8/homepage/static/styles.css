@@ -1,0 +1,22 @@
+body {
+    background-color: #2c313c;
+    color: white;
+}
+
+#game p {
+    font-size: 5em;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: none;
+}

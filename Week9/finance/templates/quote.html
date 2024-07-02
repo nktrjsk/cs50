@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form id="buyform">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="Symbol" type="text">
+        </div>
+        <button class="btn btn-primary mb-5" type="submit">Lookup</button>
+    </form>
+
+    {% if stock %}
+        <p><span class="fw-bold">Name:</span> {{ stock.name }}</p>
+        <p><span class="fw-bold">Price:</span> {{ stock.price | usd }}</p>
+    {% else %}
+        <h3>Stock not found</h3>
+    {% endif %}
+
+{% endblock %}

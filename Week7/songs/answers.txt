@@ -1,0 +1,3 @@
+I'd say listener's "audio aura" is "balanced and energic"
+
+I just looked at averages of categories and assigned possible moods, but it would be better to have some kind of more complex algorithm to do the job.

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form>
+        <input type="submit" value="Submit">
+    </form>
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="Symbol" type="text">
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="quantity" name="shares" placeholder="Quantity" type="hidden" min="1" value="1">
+    </div>
+    <button id="submit" class="btn btn-primary mb-5">Lookup</button>
+
+    <div id="info" style="display: none;">
+        <p><span class="fw-bold">Name:</span> <span id="name"></span></p>
+        <p><span class="fw-bold">Price:</span> <span id="price"></span></p>
+    </div>
+
+{% endblock %}
